@@ -8,6 +8,9 @@ def main():
         num_couples = int(input())
         women = input().split(" ")
         men = input().split(" ")
+        for i in range(len(men)):
+            men[i] = int(men[i])
+            women[i] = int(women[i])
         men = sorted(men)
         women = sorted(women)
         hotness_bond = 0
